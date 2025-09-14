@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/SFML",
+                "/usr/share/SFML"
+            ],
+            "defines": [],
+            "compilerArgs": ["-Wall", "-Wextra"]
+        },
+        {
+            "name": "Windows",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:/MinGW/bin/g++.exe", 
+            // Update this path with your MinGW installation path
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/SFML/include", 
+                // Update this path with your SFML include directory on Windows
+                "C:/SFML/lib"      
+                // Update this path with your SFML lib directory on Windows
+            ],
+            "defines": [],
+            "compilerArgs": ["-Wall", "-Wextra"]
+        }
+    ],
+    "version": 4
+}
