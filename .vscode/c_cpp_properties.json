@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:HOMEBREW_PREFIX}/include" // Путь к include Homebrew
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++", // Или clang++ если используете его
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64" // Или linux-clang-x64
+        }
+    ],
+    "version": 4
+}

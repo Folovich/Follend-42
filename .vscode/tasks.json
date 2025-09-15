@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sfml",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "-o",
+                "main",
+                "-I", "${env:HOMEBREW_PREFIX}/include", // Путь к include Homebrew
+                "-L", "${env:HOMEBREW_PREFIX}/lib",     // Путь к lib Homebrew
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                // Добавьте "-lsfml-audio", "-lsfml-network", если используете
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
